@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="215"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="logo.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="Login as admin" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black"
+               FontSize="Large" FontAttributes="None" VerticalOptions="Center" VerticalTextAlignment="Start"/>
+        
+        <Image Source="iconuser.png" Grid.Row="2" Grid.Column="0"/>
+        <Entry Placeholder="USER NAME..." Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtUsername"/>
+
+        <Image Source="iconpass.png" Grid.Row="3" Grid.Column="0"/>
+        <Entry IsPassword="True" Placeholder="PASSWORD..." Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" 
+               x:Name="txtPassword"/>
+
+        <Button Text="Login" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" 
+                x:Name="cmdLogin" Clicked="cmdLogin_Clicked"/>
+
+        <Label Text="Are you user?" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black"
+               FontSize="Large" FontAttributes="None" VerticalOptions="Center"/>
+        <Button Text="Login as user" TextColor="Blue" VerticalOptions="Center" Grid.Row="5" Grid.Column="2" 
+                x:Name="cmdLoginuser" Clicked="cmdLoginuser_Clicked"/>
+              
+        
+    </Grid>
+</ContentPage>

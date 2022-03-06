@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.kbyt">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Phiếu khai báo y tế" TextColor="DarkBlue" FontSize="Large" VerticalTextAlignment="Center" 
+               VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+
+        <Label Text="Trong vòng 14 ngày, anh/chị có:" TextColor="Black" FontSize="Medium" 
+               VerticalTextAlignment="Start" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+
+        <Label Text="Tiếp xúc với người bị covid?" TextColor="Black" FontSize="Medium" 
+               VerticalTextAlignment="Start" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Switch IsToggled="False" x:Name="txtKbyt1" HorizontalOptions="End" Grid.Row="2" Grid.Column="3"/>
+
+        <Label Text="Đi về từ vùng có covid?" TextColor="Black" FontSize="Medium" 
+               VerticalTextAlignment="Start" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Switch IsToggled="False" x:Name="txtKbyt2" HorizontalOptions="End" Grid.Row="3" Grid.Column="3"/>
+
+        <Label Text="Tiếp xúc với người đi từ vùng có covid?" TextColor="Black" FontSize="Medium" 
+               VerticalTextAlignment="Start" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Switch IsToggled="False" x:Name="txtKbyt3" HorizontalOptions="End" Grid.Row="4" Grid.Column="3"/>
+
+        <Label Text="Trong vòng 14 ngày, anh/chị có triệu chứng:" TextColor="Black" FontSize="Medium" 
+               VerticalTextAlignment="Start" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4"/>
+
+        <Label Text="Sốt" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="6" Grid.Column="0"/>
+        <Switch IsToggled="False" x:Name="txtKbyt4" HorizontalOptions="End" Grid.Row="6" Grid.Column="1"/>
+        <Label Text="Viêm phổi" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="6" Grid.Column="2"/>
+        <Switch IsToggled="False" x:Name="txtKbyt5" HorizontalOptions="End" Grid.Row="6" Grid.Column="3"/>
+
+        <Label Text="Ho" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="7" Grid.Column="0"/>
+        <Switch IsToggled="False" x:Name="txtKbyt6" HorizontalOptions="End" Grid.Row="7" Grid.Column="1"/>
+        <Label Text="Đau họng" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="7" Grid.Column="2"/>
+        <Switch IsToggled="False" x:Name="txtKbyt7" HorizontalOptions="End" Grid.Row="7" Grid.Column="3"/>
+
+        <Label Text="Khó thở" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="8" Grid.Column="0"/>
+        <Switch IsToggled="False" x:Name="txtKbyt8" HorizontalOptions="End" Grid.Row="8" Grid.Column="1"/>
+        <Label Text="Mệt mỏi" TextColor="Black" FontSize="Medium" VerticalTextAlignment="Start"
+               Grid.Row="8" Grid.Column="2"/>
+        <Switch IsToggled="False" x:Name="txtKbyt9" HorizontalOptions="End" Grid.Row="8" Grid.Column="3"/>
+
+        <Button Text="Khai báo" TextColor="DarkBlue" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"
+                Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" x:Name="cmdKhaibao" Clicked="cmdKhaibao_Clicked"/>
+    </Grid>
+</ContentPage>

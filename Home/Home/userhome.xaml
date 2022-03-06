@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.userhome">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo1.png" HeightRequest="215"/>
+            <Label Text="Người thuê trọ" x:Name="txtUserhome" VerticalTextAlignment="Start" HorizontalOptions="Start" 
+                   VerticalOptions="Center" FontSize="Large" 
+                   FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Button Text="Xem thông báo" x:Name="cmdXemthongbao" Clicked="cmdXemthongbao_Clicked"/>
+            <Button Text="KBYT" x:Name="cmdKbyt" Clicked="cmdKbyt_Clicked"/>
+            <Button Text="Cập nhật thông tin cá nhân" x:Name="cmdInfor" Clicked="cmdInfor_Clicked"/>
+            <Button Text="Hóa đơn" x:Name="cmdHoadon" Clicked="cmdHoadon_Clicked"/>
+            <Button Text="Đăng xuất" x:Name="cmdDangxuat" Clicked="cmdDangxuat_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

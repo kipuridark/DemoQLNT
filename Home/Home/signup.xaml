@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.signup">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="logo.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Image Source="iconuser.png" Grid.Row="1" Grid.Column="0"/>
+        <Entry Placeholder="Username..." Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+               x:Name="txtUsername"/>
+
+        <Image Source="iconemail.png" Grid.Row="2" Grid.Column="0"/>
+        <Entry Placeholder="Email..." Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" 
+               x:Name="txtEmail"/>
+
+        <Image Source="iconpass.png" Grid.Row="3" Grid.Column="0"/>
+        <Entry Placeholder="Password..." IsPassword="True" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" 
+               x:Name="txtPassword"/>
+
+        <Image Source="iconpass.png" Grid.Row="4" Grid.Column="0"/>
+        <Entry Placeholder="Confirm Password" IsPassword="True" Grid.Row="4" Grid.Column="1" 
+               Grid.ColumnSpan="2" x:Name="txtCfpassword"/>
+
+        <Button Text="Sign Up" Grid.Row="5" Grid.Column="0" TextColor="OrangeRed" VerticalOptions="Center" 
+                HorizontalOptions="Center" x:Name="cmdSignup" Clicked="cmdSignup_Clicked"/>
+        <Button Text="Return to Login" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" 
+                TextColor="Aquamarine" VerticalOptions="Center" HorizontalOptions="Center" 
+                x:Name="cmdReturn" Clicked="cmdReturn_Clicked"/>
+    
+    </Grid>
+</ContentPage>

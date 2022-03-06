@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.infor">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Nhập thông tin cá nhân" TextColor="Blue" FontSize="Large" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
+               VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <Label Text="Họ tên:" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="1" Grid.Column="0"/>
+        <Entry Placeholder="Trần Văn A" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtName" VerticalOptions="Center"/>
+
+        <Label Text="Ngày sinh" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="2" Grid.Column="0"/>
+        <DatePicker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtBod" MinimumDate="01/01/1960" 
+                    MaximumDate="12/31/2003" VerticalOptions="Center" />
+
+        <Label Text="Giới tính:Nữ " TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="3" Grid.Column="0"/>
+        <Switch IsToggled="True" x:Name="txtSex" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Label Text="Nam" TextColor="Black" FontSize="Large" VerticalTextAlignment="End" Grid.Row="3" Grid.Column="2" 
+               VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <Label Text="CMND:" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="4" Grid.Column="0"/>
+        <Entry Placeholder="1234567890" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtId" VerticalOptions="Center" 
+               HorizontalOptions="Center"/>
+
+        <Label Text="Địa chỉ thường trú:" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Entry Placeholder="102,Nguyễn Chí Thanh,TDP 5, Thị trấn Phước An, Krong Pak, Dak Lak." Grid.Row="6" Grid.Column="0" 
+               Grid.ColumnSpan="3" x:Name="txtAddr"/>
+
+        <Label Text="Email:" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start" 
+               Grid.Row="7" Grid.Column="0"/>
+        <Entry Placeholder="TranVanA@gmail.com..." Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtMail"/>
+
+        <Label Text="SDT:" TextColor="Black" FontSize="Large" VerticalOptions="Center" VerticalTextAlignment="Start"
+               Grid.Row="8" Grid.Column="0"/>
+        <Entry Placeholder="0123456789" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtPhone"/>
+
+        <Button Text="Cập Nhập" TextColor="Blue" FontSize="Medium" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="1" 
+                VerticalOptions="Center" HorizontalOptions="Center"
+                x:Name="cmdCapnhat" Clicked="cmdCapnhat_Clicked"/>
+    </Grid>
+</ContentPage>

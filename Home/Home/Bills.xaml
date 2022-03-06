@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Home.Bills">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="215"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="logo1.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Label Text="Tiền thuê trọ:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Start" 
+               VerticalOptions="Center" Grid.Row="1" Grid.Column="0"/>
+        <Label Text="0" TextColor="Blue" FontSize="Medium" VerticalTextAlignment="End" VerticalOptions="Center"
+               Grid.Row="1" Grid.Column="1" x:Name="txtTienthue"/>
+
+        <Label Text="Tiền điện:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Start" 
+               VerticalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+        <Label Text="0" TextColor="Blue" FontSize="Medium" VerticalTextAlignment="End" VerticalOptions="Center"
+               Grid.Row="2" Grid.Column="1" x:Name="txtTiendien"/>
+
+        <Label Text="Tiền nước:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Start" 
+               VerticalOptions="Center" Grid.Row="3" Grid.Column="0"/>
+        <Label Text="0" TextColor="Blue" FontSize="Medium" VerticalTextAlignment="End" VerticalOptions="Center"
+               Grid.Row="3" Grid.Column="1" x:Name="txtTiennuoc"/>
+
+        <Label Text="Tiền mạng:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Start" VerticalOptions="Center"
+               Grid.Row="4" Grid.Column="0"/>
+        <Label Text="0" TextColor="Blue" FontSize="Medium" VerticalTextAlignment="End" VerticalOptions="Center"
+               Grid.Row="4" Grid.Column="1" x:Name="txtTienmang"/>
+
+        <Label Text="Tổng tiền:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Start" VerticalOptions="Center"
+               Grid.Row="5" Grid.Column="0"/>
+        <Label Text="0" TextColor="Blue" FontSize="Medium" VerticalTextAlignment="End" VerticalOptions="Center"
+               Grid.Row="5" Grid.Column="1" x:Name="txtTongtien"/>
+
+        <Button Text="Thanh toán" TextColor="OrangeRed" FontSize="Medium" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+                x:Name="cmdThanhtoan" Clicked="cmdThanhtoan_Clicked"/>
+    </Grid>
+</ContentPage>
